@@ -15,8 +15,11 @@ body{
 	background-color: rgb(197, 197, 164);
 	width: 50%;
 	height: 520px;
-	box-shadow: 0 0 10px black,
-							0 0 15px black; 
+	box-shadow: 0 0 10px black;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	justify-content: center;
 }
 
 .img{
@@ -25,6 +28,8 @@ body{
 	opacity: 0.6;
 	width: 100px;
 	height: 120px;
+	position: absolute;
+	left: 0;
 	margin: 10px;
 }
 
@@ -35,9 +40,53 @@ body{
 	width: 120px;
 	height: 150px;
 	margin: 10px;
+	box-shadow: 4px 4px 4px  white;
+	position: absolute;
+	right: 0;
+	bottom: 0;
 }
-
+/* 
 .cont-img{
 	display: flex;
 	justify-content: space-between;
+} */
+
+.writes{
+	width: 50%;
+	height: 100px;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 5px;
+	font-family: consolas;
+}
+
+.writes2{
+	width: 50%;
+	height: 150px;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-family: consolas;
+	position: absolute;
+	bottom: 50px;
+	left: 50px;
+}
+
+.write-middle{
+	width: 80%;
+	height: 100px;
+	margin: 10px;
+	position: absolute;
+	margin-top: 150px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-size: 24px;
+	align-items: center;
+	justify-content: center;
 }
